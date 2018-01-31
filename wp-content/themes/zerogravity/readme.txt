@@ -3,7 +3,7 @@ Contributors: GalussoThemes, edalzurc
 Requires at least: WordPress 4.5
 Tested up to: WordPress 4.9.1
 Requires PHP: 5.6
-Stable tag: 2.2.2
+Stable tag: 2.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, one-column, two-columns, right-sidebar, left-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
@@ -55,6 +55,9 @@ Images used in Theme Screenshot:
 ZeroGravity theme is translation ready (Spanish translation is included).
 
 == Changelog ==
+= Version 2.2.3 (2018-01-29-) =
+* Added esc_attr_e in archive.php file (L23).
+
 = Version 2.2.2 (2017-12-18) =
 * Added esc_attr_e in comments.php file (L35, L46).
 

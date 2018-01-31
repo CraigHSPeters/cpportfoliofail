@@ -20,7 +20,7 @@ get_header(); ?>
 					elseif ( is_year() ) :
 						printf( __( 'Yearly Archives: %s', 'zerogravity' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'zerogravity' ) ) . '</span>' );
 					else :
-						_e( 'Archives', 'zerogravity' );
+						esc_attr_e( 'Archives', 'zerogravity' );
 					endif;
 				?></h1>
 			</header><!-- .archive-header -->

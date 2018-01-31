@@ -32,25 +32,25 @@
 
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
-    
+
     <?php get_template_part( ZEROGRAVITY_TEMPLATE_PARTS . 'top-bar' ); ?>
-    
+
 	<div style="position:relative">
 		<?php get_template_part(ZEROGRAVITY_TEMPLATE_PARTS . 'menu-movil'); ?>
     </div>
-    
-		<?php if ( get_header_image() ) { 
-				if (get_theme_mod('zerogravity_logo_active') == 1) { 
+
+		<?php if ( get_header_image() ) {
+				if (get_theme_mod('zerogravity_logo_active') == 1) {
 					$div_image_header = '<div class="logo-header-wrapper">';
 					if (get_theme_mod('zerogravity_logo_center') == 1) $div_image_header = '<div class="logo-header-wrapper" style="text-align:center;">';
 				}else{
 					$div_image_header = '<div class="image-header-wrapper">';
 				} ?>
-				
+
 				<?php echo $div_image_header; ?>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php esc_attr( header_image() ); ?>" class="header-image" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" /></a>
 				</div><!-- .logo-header-wrapper or .image-header-wrapper -->
-				
+
 		<?php }else{ ?>
 			<div class="blog-info-sin-imagen">
 			<hgroup>
@@ -59,13 +59,13 @@
 			</hgroup>
 			</div>
 		<?php } //if ( get_header_image() ) ?>
-		
+
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'zerogravity' ); ?>"><?php _e( 'Skip to content', 'zerogravity' ); ?></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 
-		
+
 	</header><!-- #masthead -->
 
 	<div id="main" class="wrapper">

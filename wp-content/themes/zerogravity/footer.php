@@ -12,10 +12,10 @@
 		<div class="site-info">
 			<div class="credits credits-left"><?php echo wp_kses_post(get_theme_mod('zerogravity_footer_text_left', __('Copyright 2015', 'zerogravity'))); ?></div>
 			<div class="credits credits-center"><?php echo wp_kses_post(get_theme_mod('zerogravity_footer_text_center', __('Footer text center', 'zerogravity'))); ?></div>
-			<div class="credits credits-right">
+			<!-- <div class="credits credits-right">
 			<a href="<?php echo ZEROGRAVITY_AUTHOR_URI; ?>/wordpress-themes/zerogravity">ZeroGravity</a> <?php esc_attr_e('by', 'zerogravity'); ?> GalussoThemes.com<br />
 			<?php esc_attr_e('Powered by', 'zerogravity'); ?><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'zerogravity' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'zerogravity' ); ?>"> WordPress</a>
-			</div>
+			</div> -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
